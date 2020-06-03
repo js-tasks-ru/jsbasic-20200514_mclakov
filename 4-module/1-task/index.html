@@ -28,7 +28,14 @@
             }
         ];
 
-        document.body.appendChild(makeFriendsList(friends));
+        function makeFriendsList(str) {
+          const newUl = document.createElement('ul');
+          newUl.innerHTML = str.map(i => `<li>${i.firstName} ${i.lastName}</li>`).join('\n');
+          return newUl;
+
+         }
+
+                document.body.appendChild(makeFriendsList(friends));
     </script>
 </body>
 </html>
