@@ -9,7 +9,6 @@ function getMinMax(str) {
         .join(' ')
         .split(' ')
         .filter(item => !isNaN(parseInt(item)));
-
   let result = {
   }
   result.min = Math.min.apply(null, arr);
