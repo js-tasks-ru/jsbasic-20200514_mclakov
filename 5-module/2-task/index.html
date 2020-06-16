@@ -7,29 +7,6 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <h1>Пример минимально необходимой структуры таблицы для прохождения тестов</h1>
-    <div class="example">
-        <table>
-            <thead>
-                <tr>
-                    <td>Name</td>
-                    <td>Age</td>
-                    <td>Salary</td>
-                    <td>City</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Ilia</td>
-                    <td>25</td>
-                    <td>1000</td>
-                    <td>Petrozavods</td>
-                </tr>
-
-            </tbody>
-        </table>
-    </div>
-
     <h1>Результат</h1>
     <div class="result">
 
@@ -66,7 +43,12 @@
         ];
 
         let table = new SortableTable(rows);
+
+
         document.querySelector('.result').appendChild(table.el);
+
+
+
 
     </script>
 
